@@ -16,6 +16,7 @@ Struggling to keep up with new questions on Chegg? Our Chrome extension is here 
 
 ![Demo Image](demo-image1.png)
 ![Demo Image](demo-image2.png)
+![Demo Image](demo-image3.png)
 
 ## Installation 🔗
 
