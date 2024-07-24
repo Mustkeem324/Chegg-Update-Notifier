@@ -36,7 +36,7 @@ This project is licensed under the MIT License - see the  file for details.
 
 ## Contact
 
-For any queries or feedback, please reach out to us at support@cheggupdatenotifier.com.
+For any queries or feedback, please reach out to us at https://t.me/cheggnx.
 
 ---
 
