@@ -1,0 +1,1 @@
+# Chegg-Update-Notifier
