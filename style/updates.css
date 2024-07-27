@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8f2; /* Light orange background */
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffebcc; /* Light orange container background */
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: perspective(1200px) rotateX(10deg); /* 3D effect */
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h1 {
+    font-size: 4em; /* Larger font size */
+    color: #ff6600; /* Orange text color */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Strong 3D shadow effect */
+}
+
+.title .logo {
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.version {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 2em; /* Larger font size */
+    color: #ff6600; /* Orange text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content h1 {
+    color: #ff6600; /* Orange text color */
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Strong 3D shadow effect */
+}
+
+.content p {
+    margin-bottom: 30px;
+    font-size: 1.5em; /* Larger font size for paragraphs */
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle 3D shadow effect */
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.features li {
+    background-color: #fff;
+    border: 1px solid #ffcc99; /* Light orange border */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* 3D effect */
+    transform: translateZ(10px); /* Floating effect */
+    transition: all 0.3s ease;
+}
+
+.features li:hover {
+    transform: translateZ(20px); /* Elevated effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.popup-image {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* 3D effect */
+    transform: perspective(1200px) rotateX(5deg); /* Slight 3D tilt */
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5em; /* Larger font size */
+    line-height: 1.6;
+}
+
+.rate-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #ff6600; /* Orange button */
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.5em; /* Larger font size */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rate-link:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}

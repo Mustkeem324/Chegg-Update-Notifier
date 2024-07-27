@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 350px; /* Adjust width to match extension popup size */
+  height: auto;
+}
+
+/* Title Section */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333; /* Dark background color */
+  padding: 10px; /* Add some padding for spacing */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.title h1 {
+  font-size: 20px;
+  margin: 0;
+  color: orange;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+  font-weight: 700;
+}
+
+.title .igg {
+  width: 48px;
+  height: 48px;
+  margin-left: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  border-radius: 50%;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  /* background-color: #555; Darker background color for the pseudo-element */
+  z-index: -1;
+}
+
+
+
+/* Container */
+.container, .container2 {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  outline: 2px solid orange;
+  transition: transform 0.2s;
+}
+
+.container:hover, .container2:hover {
+  transform: translateY(-3px);
+}
+
+/* Toggle Section */
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggleLabel {
+  font-size: 16px; /* Adjusted font size for better readability */
+  margin: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px; /* Increased width */
+  height: 30px; /* Increased height */
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 30px; /* Rounded corners for a more modern look */
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+  outline: 2px solid orange; /* Orange border line */
+  outline-offset: -3px; /* Adjust offset to make the border line more integrated */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px; /* Adjusted size for better visual balance */
+  width: 24px; /* Adjusted size for better visual balance */
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+  background-color: orange;
+  outline-color: #ffffff; /* Darker shade of blue for when the switch is checked */
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px); /* Adjusted to match the new width */
+}
+
+
+/* Time Interval Box */
+.TIbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+}
+
+.TILabel {
+  font-size: 14px;
+}
+
+.timeInput {
+  width: 50px;
+  padding: 5px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: right;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.TISubMsg {
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e7e7e7;
+}
+
+footer a {
+  color: #007BFF;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  margin: 0 5px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Version Info */
+footer p {
+  margin: 0;
+  font-size: 10px;
+  text-align: center;
+  color: #888;
+}
+
+/* Social Media Icons */
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: #007BFF;
+  margin: 0 10px;
+  text-shadow: none;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: orange;
+}
+
+/* Additional Styling */
+footer .company-info {
+  font-size: 12px;
+  color: #555;
+  margin-top: 10px;
+}
+
+footer .company-info a {
+  color: orange;
+}
+
+footer .company-info a:hover {
+  color: orange;
+}
+
+
+
